@@ -843,6 +843,8 @@ GameObject:
   - component: {fileID: 2189130046020582975}
   - component: {fileID: 480510150334843757}
   - component: {fileID: 1926765558059392338}
+  - component: {fileID: 478999383637286515}
+  - component: {fileID: -6480982298263250963}
   m_Layer: 0
   m_Name: Alce Pipo
   m_TagString: Untagged
@@ -857,7 +859,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8203134085512992113}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 23.0527, y: 23.0527, z: 23.0527}
   m_Children:
@@ -873,7 +875,7 @@ Transform:
   - {fileID: 7841049917193959213}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!95 &4750711659227493188
 Animator:
   serializedVersion: 3
@@ -931,3 +933,31 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.123992816, y: 0.35496315, z: 0.37323254}
   m_Center: {x: 0.0004939651, y: 0.17801882, z: 0.06948349}
+--- !u!54 &478999383637286515
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8203134085512992113}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &-6480982298263250963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8203134085512992113}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b34452b6555c5894dbe80330ced3d985, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

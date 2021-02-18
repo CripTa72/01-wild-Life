@@ -1920,6 +1920,8 @@ GameObject:
   - component: {fileID: 2417077486982273501}
   - component: {fileID: 8179718617818904899}
   - component: {fileID: 3066625391232869952}
+  - component: {fileID: 7454197224851334848}
+  - component: {fileID: 4896472333766835514}
   m_Layer: 0
   m_Name: Vaca Pipo
   m_TagString: Untagged
@@ -1934,14 +1936,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9189318276462420861}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.18672012, y: 0.1867201, z: 0.1867201}
   m_Children:
   - {fileID: 8609166876591340708}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!95 &3637120535697293090
 Animator:
   serializedVersion: 3
@@ -1999,3 +2001,31 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 12.584697, y: 30.087557, z: 44.946175}
   m_Center: {x: -0.0000006384384, y: 14.921613, z: -0.44070643}
+--- !u!54 &7454197224851334848
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9189318276462420861}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &4896472333766835514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9189318276462420861}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b34452b6555c5894dbe80330ced3d985, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

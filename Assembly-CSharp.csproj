@@ -59,12 +59,16 @@
      <Compile Include="Assets\scripts\SpawnManager.cs" />
      <Compile Include="Assets\scripts\DestroyOutOfBounds.cs" />
      <Compile Include="Assets\scripts\PlayerController.cs" />
+     <Compile Include="Assets\scripts\CheckCollision.cs" />
      <None Include="Assets\Course Library\_Source_Files\_LICENSE.txt" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>E:/Programacion/Tutorial Unity/02 Wild Life/01 wild Life/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>E:/Programacion/Tutorial Unity/02 Wild Life/01 wild Life/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UI">
+ <HintPath>E:/Programacion/Tutorial Unity/02 Wild Life/01 wild Life/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Timeline">
  <HintPath>E:/Programacion/Tutorial Unity/02 Wild Life/01 wild Life/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
@@ -74,9 +78,6 @@
  </Reference>
  <Reference Include="Unity.TextMeshPro">
  <HintPath>E:/Programacion/Tutorial Unity/02 Wild Life/01 wild Life/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.UI">
- <HintPath>E:/Programacion/Tutorial Unity/02 Wild Life/01 wild Life/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.UI">
  <HintPath>E:/Programacion/Tutorial Unity/02 Wild Life/01 wild Life/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>

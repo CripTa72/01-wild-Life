@@ -7,24 +7,21 @@ public class SpawnManager : MonoBehaviour
 
     public GameObject[] enemies;
     private int animalIndex;
-    
-    private float spawnRangeX = 25;
-    private float spawnPosY;
+
+    private float spawnRangeX = 23f;
+    private float spawnPosZ;
     [SerializeField, Range(1,5)]
     private float startDelay = 2f;
     [SerializeField,Range(0.5f, 5.5f)]
     private float spawnInterval = 0.5f;
     void Start()
     {
-        spawnPosY = this.transform.position.y;
+        spawnPosZ = this.transform.position.z;
         InvokeRepeating("Spawner",
             startDelay,
             spawnInterval);
 
     }
-
-    // Update is called once per frame
-    
     void Spawner()
     {   
         
@@ -32,7 +29,7 @@ public class SpawnManager : MonoBehaviour
         float xRand = Random.Range(-spawnRangeX, spawnRangeX);
         animalIndex = Random.Range(0, enemies.Length);
 
-        Vector3 spawnPos = new Vector3(xRand, spawnPosY, 0);
+        Vector3 spawnPos = new Vector3(xRand, 0, spawnPosZ);
         Instantiate(enemies[animalIndex],
             spawnPos, 
             enemies[animalIndex].transform.rotation);
