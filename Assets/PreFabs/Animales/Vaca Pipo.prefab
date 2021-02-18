@@ -1919,6 +1919,7 @@ GameObject:
   - component: {fileID: 3637120535697293090}
   - component: {fileID: 2417077486982273501}
   - component: {fileID: 8179718617818904899}
+  - component: {fileID: 3066625391232869952}
   m_Layer: 0
   m_Name: Vaca Pipo
   m_TagString: Untagged
@@ -1933,14 +1934,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9189318276462420861}
-  m_LocalRotation: {x: 0, y: -0.70710677, z: 0.70710677, w: 0}
-  m_LocalPosition: {x: -1.3470203, y: 3.57, z: -0.27}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.18672012, y: 0.1867201, z: 0.1867201}
   m_Children:
   - {fileID: 8609166876591340708}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 90, y: -90, z: 90}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &3637120535697293090
 Animator:
   serializedVersion: 3
@@ -1985,3 +1986,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da6148ca6c7519b469d9b7becd042380, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &3066625391232869952
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9189318276462420861}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 12.584697, y: 30.087557, z: 44.946175}
+  m_Center: {x: -0.0000006384384, y: 14.921613, z: -0.44070643}

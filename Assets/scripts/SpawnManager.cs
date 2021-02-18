@@ -6,34 +6,35 @@ public class SpawnManager : MonoBehaviour
 {
 
     public GameObject[] enemies;
-    public int animalIndex;
-    [SerializeField]
+    private int animalIndex;
+    
     private float spawnRangeX = 25;
     private float spawnPosY;
-    private void Start()
+    [SerializeField, Range(1,5)]
+    private float startDelay = 2f;
+    [SerializeField,Range(0.5f, 5.5f)]
+    private float spawnInterval = 0.5f;
+    void Start()
     {
         spawnPosY = this.transform.position.y;
-    }
-    // Update is called once per frame
-    void Update()
-    {
-        
+        InvokeRepeating("Spawner",
+            startDelay,
+            spawnInterval);
 
-        if (animalIndex >= 0 && animalIndex < enemies.Length)
-        {
-            //el animal existe
-            if (Input.GetKeyDown(KeyCode.F))
-            {
-                //posicion de generación de enemigos.
-                float xRand = Random.Range(-spawnRangeX, spawnRangeX);
-                animalIndex = Random.Range(0, enemies.Length);
-                Vector3 spawnPos = new Vector3(xRand, spawnPosY, 0);
-                Instantiate(enemies[animalIndex], spawnPos, enemies[animalIndex].transform.rotation);
-            }
-        }
-        else
-        {
-            Debug.LogError("el Índice del enemigo a instanciar NO existe");
-        }
+    }
+
+    // Update is called once per frame
+    
+    void Spawner()
+    {   
+        
+        //posicion de generación de enemigos.
+        float xRand = Random.Range(-spawnRangeX, spawnRangeX);
+        animalIndex = Random.Range(0, enemies.Length);
+
+        Vector3 spawnPos = new Vector3(xRand, spawnPosY, 0);
+        Instantiate(enemies[animalIndex],
+            spawnPos, 
+            enemies[animalIndex].transform.rotation);
     }
 }

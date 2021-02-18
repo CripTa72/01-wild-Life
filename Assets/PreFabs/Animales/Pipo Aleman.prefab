@@ -1216,6 +1216,7 @@ GameObject:
   - component: {fileID: 6115351693071773867}
   - component: {fileID: 1220224096244927873}
   - component: {fileID: 2254294267376714459}
+  - component: {fileID: 3460611056348169507}
   m_Layer: 0
   m_Name: Pipo Aleman
   m_TagString: Untagged
@@ -1230,8 +1231,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1521321778918388047}
-  m_LocalRotation: {x: 0, y: -0.70710677, z: 0.70710677, w: 0}
-  m_LocalPosition: {x: -8.911345, y: 1.74, z: 0.01}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 18.580736, y: 18.580427, z: 18.580427}
   m_Children:
   - {fileID: 2317993713836327748}
@@ -1273,7 +1274,7 @@ Transform:
   - {fileID: 8379717832504906393}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 90, y: -90, z: 90}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &6115351693071773867
 Animator:
   serializedVersion: 3
@@ -1318,6 +1319,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da6148ca6c7519b469d9b7becd042380, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &3460611056348169507
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1521321778918388047}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.078278564, y: 0.18683971, z: 0.24867572}
+  m_Center: {x: 0.0006840757, y: 0.09313219, z: 0.032340612}
 --- !u!1 &1560335272669535768
 GameObject:
   m_ObjectHideFlags: 0

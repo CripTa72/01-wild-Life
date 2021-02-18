@@ -5159,6 +5159,7 @@ GameObject:
   - component: {fileID: 3919037460563431226}
   - component: {fileID: 8252637441453169942}
   - component: {fileID: 8832980688675529108}
+  - component: {fileID: 4195707480796486213}
   m_Layer: 0
   m_Name: Pipo bernardo
   m_TagString: Untagged
@@ -5173,8 +5174,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7799828394230021348}
-  m_LocalRotation: {x: 0, y: -0.70710677, z: 0.70710677, w: 0}
-  m_LocalPosition: {x: -5.74, y: 7.34, z: -0.05}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 13.459975, y: 13.459752, z: 13.459752}
   m_Children:
   - {fileID: 6013658745469725311}
@@ -5216,7 +5217,7 @@ Transform:
   - {fileID: 1770771192705420391}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 90, y: -90, z: 90}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &3919037460563431226
 Animator:
   serializedVersion: 3
@@ -5261,6 +5262,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da6148ca6c7519b469d9b7becd042380, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &4195707480796486213
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7799828394230021348}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.08933362, y: 0.18575782, z: 0.23480478}
+  m_Center: {x: 0.0000004074025, y: 0.09382517, z: 0.030284563}
 --- !u!1 &7874318848772048268
 GameObject:
   m_ObjectHideFlags: 0
